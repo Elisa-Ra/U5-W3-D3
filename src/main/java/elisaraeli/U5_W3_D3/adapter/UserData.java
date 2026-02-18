@@ -1,6 +1,5 @@
 package elisaraeli.U5_W3_D3.adapter;
 
-import javax.sql.DataSource;
 
 public class UserData {
     private String nomeCompleto;
@@ -10,4 +9,10 @@ public class UserData {
         nomeCompleto = ds.getNomeCompleto();
         eta = ds.getEta();
     }
+
+    @Override
+    public String toString() {
+        return "Nome completo: " + nomeCompleto + ", Età: " + eta;
+    }
+
 }
